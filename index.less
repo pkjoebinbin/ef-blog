@@ -17,10 +17,30 @@ body{
 
 @media screen and (max-width:992px) {
 	
-	body .bloglist{
-	 	background: red;
-	 }
+	body .blogList .blog{
+		width:46%;
+	}
 
+	body .videoList .video{
+		width:46%;
+	}
+
+
+}
+
+@media screen and (max-width:768px) {
+	
+	body .blogList .blog{
+		width:95%;
+	}
+
+	body .videoList .video{
+		width:95%;
+	}
+
+	.bannerOne,.bannerTwo{
+		display:none;
+	}
 
 
 }
@@ -62,7 +82,7 @@ body{
 			a{
 				padding:6px 30px;
 				color:#fff;
-				background: #80b8c7;
+				//background: #80b8c7;
 				border-radius: 4px;
 
 			
@@ -106,7 +126,7 @@ body{
 .blogList{
 	font-size:0;
 	
-	max-width:70%;
+	max-width:1200px;
 	margin:.4rem auto .1rem;
 	text-align:center;
 
@@ -148,7 +168,7 @@ body{
 .videoList{
 	font-size:0;
 	
-	max-width:70%;
+	max-width:1200px;
 	margin:.4rem auto .1rem;
 	text-align:center;
 
@@ -191,8 +211,9 @@ body{
 .blogBorder{
 	
 	margin:.5rem auto 0;
-	max-width:70%;
-	
+	max-width:1200px;
+	padding:0 20px;
+
 	.blogxiangxi{
 		
 		h3{
@@ -212,6 +233,68 @@ body{
 			margin-top:.4rem;
 			line-height:2;
 			font-size:.14rem;
+
+
+			img{
+				width:100%;
+			}
+		}
+
+		.backgroundLink{
+			text-align:center;
+			background: #e4e4e4;
+
+			
+			margin:.3rem auto;
+			height:1rem;
+		}
+	}
+}
+
+
+
+.videoBorder{
+	
+	margin:.5rem auto 0;
+	max-width:1200px;
+	
+	padding:0 20px;
+	
+	.videoxiangxi{
+		
+		h3{
+			font-size:.16rem;
+		}
+
+		.date{
+			border-bottom:.02rem solid #ffcf3f;
+			margin:.1rem 0;
+			font-weight:normal;
+			color:#949494;
+			font-size:.12rem;
+			padding-bottom:.05rem;
+		}
+
+		p{
+			margin-bottom:.4rem;
+			line-height:2;
+			font-size:.14rem;
+		}
+
+
+
+		.video{
+		
+			
+			
+			margin:.5rem auto;
+		
+			video{
+				background: #333;
+				width:100%;
+				
+			}
+		
 		}
 	}
 }
