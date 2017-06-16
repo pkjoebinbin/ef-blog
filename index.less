@@ -1,13 +1,19 @@
 *{padding:0;margin:0;}
 
 
+
 a{
 	text-decoration: none;
+
+	color:#ec0095;
+	target:_blank;
+		
 }
 
 html{
 	font-size:625%;
 	background: #f6f6f6;
+	color:#333;
 }
 
 body{
@@ -54,30 +60,26 @@ body{
 	height:70px;
 	position: relative;
 
-	.logo{
-		height:100%;
-		background: red;
-		position: absolute;
-		left: 5%;
-		top:0;
-	}
+	
 	.nav{
 		font-size:0;
-		
+		position: relative;
+		max-width:1200px;
 		height:100%;
-		position: absolute;
-		right: 5%;
-		top:0;
+		margin:0 auto;
 
-		li{
+		
+
+		ul{
+			
+
+			li{
 			
 			display: inline-block;
 			font-size:.14rem;
 			line-height:70px;
 			width:100px;
 			text-align:center;
-			margin:0 10px;
-
 
 			a{
 				padding:6px 30px;
@@ -90,6 +92,10 @@ body{
 			}
 
 		}
+		}
+		
+
+		
 	}
 	
 }
@@ -99,10 +105,10 @@ body{
 	font-size:0;
 	margin:0 auto;
 	width: 100%;
-	height:6rem;
-	background: url('images/news.jpg') center top no-repeat red;
-	background-attachment:fixed;
-	background-size:auto;
+	height:5rem;
+	background: url('images/news.jpg') center top no-repeat ;
+	/* background-attachment:fixed;
+	background-size:auto; */
 
 }
 
@@ -110,10 +116,9 @@ body{
 	font-size:0;
 	margin:0 auto;
 	width: 100%;
-	height:6rem;
-	background: url('images/video.jpg') center top no-repeat red;
-	background-attachment:fixed;
-	background-size:auto;
+	height:5rem;
+	background: url('images/video.jpg') center top no-repeat ;
+	
 
 }
 
@@ -147,10 +152,14 @@ body{
 			
 			h4{
 				font-size:.14rem;
-				text-align:left;
+				white-space:nowrap; 
+				text-overflow:ellipsis;
+				overflow:hidden;
+				
 			}
 
 			h5{
+				font-size:.12rem;
 				font-weight:normal;
 				margin-top:.1rem;
 				text-align:left;
@@ -211,13 +220,26 @@ body{
 .blogBorder{
 	
 	margin:.5rem auto 0;
-	max-width:1200px;
+	max-width:800px;
 	padding:0 20px;
 
 	.blogxiangxi{
 		
 		h3{
 			font-size:.16rem;
+		}
+
+		img{
+			display:block;
+			margin:0 auto;
+			
+			width:100%;
+			max-width:100%;
+
+		}
+
+		ul{
+			margin-left:20px;
 		}
 
 		.date{
@@ -230,7 +252,7 @@ body{
 		}
 
 		p{
-			margin-top:.4rem;
+			
 			line-height:2;
 			font-size:.14rem;
 
@@ -246,7 +268,10 @@ body{
 
 			
 			margin:.3rem auto;
-			height:1rem;
+			padding:40px 20px;
+			line-height:1.5;
+
+			
 		}
 	}
 }
@@ -297,4 +322,13 @@ body{
 		
 		}
 	}
+}
+
+
+.footer{
+	background:#333;
+	height:40px;
+	color:#fff;
+	line-height:40px;
+	margin-top:80px;
 }
